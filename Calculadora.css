@@ -1,0 +1,74 @@
+h1{
+  text-align: center;
+  font-size: 80px;
+  color: azure;
+  color: rgb(89, 255, 0);
+}
+
+form{
+  background-color: #212121;
+}
+.cuadro {
+  background-color: #212121;
+  padding: 20px;
+  border-radius: 40px;
+  margin: 20px;
+  width: 380px;
+  height: 580px;
+}
+input[type="text"] {
+  font-size: 20px;
+  color: aliceblue;
+  width: 300px;
+  height: 8px;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  padding: 1em;
+  background-color: rgb(46, 46, 46);
+  box-shadow: inset 2px 5px 10px rgb(89, 255, 0);
+  transition: 200ms ease-in-out;
+  margin-bottom: 40px;
+}
+input[type="text"]:focus {
+  color: aliceblue;
+  background-color: rgb(65, 65, 65);
+  transform: scale(1.05);
+  box-shadow: 5px 5px 50px #969696,
+             -5px -5px 50px rgb(89, 255, 0);
+}
+input[type="button"]{
+  width: 60px;
+  height: 60px;
+  --hover-shadows: 16px 16px 33px #121212,
+                    -16px -16px 33px #303030;
+  --accent: rgb(89, 255, 0);
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  border: none;
+  border-radius: 1.1em;
+  background-color: #212121;
+  color: white;
+  padding: 1em 2em;
+  transition: box-shadow ease-in-out 0.3s,
+              background-color ease-in-out 0.1s,
+              letter-spacing ease-in-out 0.1s,
+              transform ease-in-out 0.1s;
+  box-shadow: 13px 13px 10px #1c1c1c,
+              -13px -13px 10px #262626;
+  margin-bottom: 20px;
+  margin-right: 20px;
+ }
+ input[type="button"]:hover {
+  box-shadow: var(--hover-shadows);
+ }
+  input[type="button"]:active{
+  box-shadow: var(--hover-shadows),
+               var(--accent) 0px 0px 30px 5px;
+  background-color: var(--accent);
+  transform: scale(0.95);
+  color: black;
+ }
+body{
+  background-color: rgb(70, 70, 70);
+}
